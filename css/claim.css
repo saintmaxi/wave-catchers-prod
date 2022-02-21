@@ -17,4 +17,10 @@ h2 {
         width: 20%;
     }
 
+    #mint h1 {
+        font-size: 4vh !important;
+        line-height: 4vh !important;
+        padding-top: 10px;
+    }
+
 }
