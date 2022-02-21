@@ -14,9 +14,44 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: var(--main-bg-color);
-    border-bottom: .5vw solid black;
+    color: white !important;
+    /* background-color: rgb(69, 188, 228); */
+    /* background-color: rgb(45, 171, 212); */
+    /* background-color: #312876; */
+    /* background-color: #76BFFE; */
+    background-color: #447CFC;
+
+    /* background-color: var(--main-bg-color);
+    background-color: #447CFC; */
+    /* border-bottom: .5vw solid white; */
+    /* background: repeating-linear-gradient(
+        to bottom,
+        #312876 20px,
+        #4d41aa 20px,
+        #6a5dc9 20px,
+        rgb(124, 112, 209) 20px,
+        #8175db 20px
+        ); */
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        /* background-size: 100%; */
+        /* background-image: url("../images/wood.png"); */
+        /* background-image: url("../images/frond.png"); */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        /* background-size: 30% 100%; */
 }
+
+#top .link {
+	transition: transform ease 300ms;
+}
+
+#top .link:hover {
+  transform: translate(0, -2px);
+	transition: transform ease 300ms;
+    display:inline-block;
+}
+
 
 #header, #title-section {
     margin: 10px 0 10px 0%;
@@ -28,29 +63,60 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    border-right: .25vw solid black;
-    font-size: 3vw;
+    width: 30%;
+    /* border-right: .25vw solid black; */
+    font-size: 2vw;
+    line-height: 2vw;
     text-align: center;
+}
+
+#title {
+    width: 100%;
+    letter-spacing: 5px;
+    /* background-image: url("../images/board.png");
+	background-size: 100% 100%; */
+    /* background-color: blanchedalmond;
+    border: solid .5vw black;
+    border-radius: 5px;
+    padding: .5vw; */
 }
 
 #header {
     width: 40%;
-    border-left: .25vw solid black;
+    /* border-left: .25vw solid black; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
+.header-menu {
+	font-size: 2vw;
+    line-height: 2vw;
+    letter-spacing: 3px;
+    width: 25%;
+    margin: 2%;
+    text-align: center;
+/* background: linear-gradient(to bottom, 
+#83C4BA    0%, #83C4BA  40%, 
+        black   0%, black 60%,        
+        #83C4BA 0%);
+    border-radius: 55%;
+    padding: .5vw; */
+}
+
+.header-menu a {
+    color: white;
+}
+
 #socials {
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     width: 15%;
     padding: .5%;
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
 }
 
 #socials a {
@@ -73,18 +139,6 @@
 
 #logo-img:hover {
     opacity: .8;
-}
-
-#title {
-    width: 60%;
-    letter-spacing: 5px;
-}
-
-.header-menu {
-	font-size: 2vw;
-    letter-spacing: 3px;
-    width: 30%;
-    text-align: center;
 }
 
 /* end header/navbar styling */
@@ -129,6 +183,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* background-image: url("../images/wood.png"); */
+
+
 }
 
 #about-text-desktop-1 {
@@ -198,6 +255,17 @@
 
 /* end team section styling */
 
+#bottom-socials {
+    /* background-color: black;
+    border-radius: 40px; */
+    width: 20%;
+    margin: auto;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 #bottom-socials a {
     width: 4vw;
     height: 4vw;
@@ -230,20 +298,31 @@
     #title-section {
         width: 100%;
         border-right: none;
-        font-size: 4vh;
-        background-color: var(--main-bg-color);
-        margin-top: 0;
-        margin-bottom: 0;
+        font-size: 5vh;
+        line-height: 5vh;
+    background-color: #447CFC;
+
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        padding-top: 20px !important;
+        margin: 0;
         padding: 2%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
     }
 
     #socials {
+        text-align: left;
         display: flex;
         flex-direction: row;
         align-items: end;
         justify-content: center;
         width: 100%;
-        border-top: 5px solid black;
+        /* backdrop-filter: blur(10px); */
+
     }
 
     #socials a {
@@ -259,7 +338,7 @@
     }
     
     #title {
-        width: 60%;
+        width: 100%;
         letter-spacing: 3px;
     }
 
@@ -270,23 +349,131 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: var(--main-bg-color);
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #F7C793    0%, #F7C793  100%); */
         margin: 0;
         padding-top: 5px;
         padding-bottom: 5px;
+        /* backdrop-filter: blur(10px); */
     }
 
+    /* Mobile Navbar animations */
+      
+
+    #expand-container {
+        overflow: hidden;
+    }
+    
+    #mobile-nav-menu {
+        margin-top: -100%;
+        transition: all 0.4s;
+    background-color: #447CFC;
+
+    }
+    
+    #mobile-nav-menu.expanded {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        margin-top: 0;
+    }
+
+
+    @-webkit-keyframes slide-in {
+        100% {
+          -webkit-transform: translateY(0%);
+          transform: translateY(0%)
+        }
+    }
+
+    @-webkit-keyframes slide-out {
+        100% {
+          -webkit-transform: translateY(-100%);
+          transform: translateY(-100%)
+        }
+    }
+
+    @keyframes slide-in {
+        100% {
+            transform: translateY(0%)
+        }
+    }
+
+    @keyframes slide-out {
+        100% {
+            transform: translateY(-100%)
+        }
+    }
+
+    .expanded {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        opacity: 1;
+    /* animation-name: slide-in;
+    animation-duration: 1s; */
+        animation: slide-in 1s linear;
+    /* -webkit-animation: slide-in 1s linear; */
+    -webkit-animation-name: slide-in;
+-webkit-animation-duration: 1s;
+-webkit-animation-iteration-count: 1;
+-webkit-animation-timing-function: linear;
+-webkit-animation-fill-mode: forwards;
+    }
+
+    .collapsed {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    /* -webkit-animation: slide-out 1s linear; */
+        animation: slide-out 1s linear;
+        -webkit-animation-name: slide-out;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: 1;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-fill-mode: forwards;
+    /* transform: translateY(-100%) */
+    }
+
+    /* end mobile navbar animations*/
+
     .header-menu {
-        font-size: 2.5vh;
+        font-size: 3vh;
+        line-height: 3vh;
+        text-align: left;
+    }
+
+    #navbar {
+        touch-action: manipulation;
+        width: 10%;
+        background-color: white;
+        background-image: url("../images/burger.png");
+        background-size: 100% 100%;
     }
 
     #mobile-wallet-connect-div {
-        background-color: var(--main-bg-color);
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        /* background-image: url(../images/Sand.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+        /* background-image: url(../images/wood-pattern.png), linear-gradient(to bottom, 
+        #D07C28    0%, #D07C28  100%); */
+    background-color: #447CFC;
+
         text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border-top: 5px solid black;
-        border-bottom: 5px solid black;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        /* border-top: 5px solid black; */
+        /* border-bottom: 5px solid black; */
+    }
+
+    #mobile-wallet-connect-div .button {
+        min-height: 6vh;
     }
 
     /* end header/navbar styling */
@@ -349,6 +536,11 @@
     #about-info {
         font-size: 2.8vh !important;
         line-height: 3.3vh !important;
+    }
+
+    #bottom-socials {
+        width: 95%;
+        padding: 2vh;
     }
 
     #bottom-socials a {
