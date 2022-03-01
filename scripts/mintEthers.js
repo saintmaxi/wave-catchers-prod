@@ -156,6 +156,10 @@ const checkWhitelistStatus = async() => {
             $("#claim-button").addClass("hidden");
         }
     }
+    else {
+        $("#whitelisted").html("");
+        $("#claim-button").addClass("hidden");
+    }
     return _isWhitelisted;
 };
 
@@ -311,6 +315,7 @@ setInterval(async()=>{
     await updateInfo();
     await updateMintInfo();
     await checkMintingLive();
+    await checkWhitelistStatus();
 }, 5000)
 
 const updateInfo = async () => {
