@@ -139,19 +139,22 @@ const checkMintingLive = async() => {
         // $("#claim-button").removeClass("hidden");
         $("#mint-closed").addClass("hidden");
     }
+    return live;
 }
 
 const checkWhitelistStatus = async() => {
     const _merkleProof = await getMerkleProof();
     const addr = await getAddress();
     const _isWhitelisted = await wavecatchers.canClaimOG(addr, _merkleProof).catch(err => console.log(err));
-    if (_isWhitelisted) {
-        $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
-        $("#claim-button").removeClass("hidden");
-    }
-    else {
-        $("#whitelisted").html("");
-        $("#claim-button").addClass("hidden");
+    if (await checkMintingLive()) {
+        if (_isWhitelisted) {
+            $("#whitelisted").html("Congrats, you are an OG!<br>Claim 1 free Wave Catcher with the 'CLAIM OG' button.");
+            $("#claim-button").removeClass("hidden");
+        }
+        else {
+            $("#whitelisted").html("");
+            $("#claim-button").addClass("hidden");
+        }
     }
     return _isWhitelisted;
 };
