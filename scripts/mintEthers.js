@@ -136,7 +136,7 @@ const checkMintingLive = async() => {
     else {
         $("#mint-button").removeClass("hidden");
         $("#quantity-controls").removeClass("hidden");
-        $("#claim-button").removeClass("hidden");
+        // $("#claim-button").removeClass("hidden");
         $("#mint-closed").addClass("hidden");
     }
 }
