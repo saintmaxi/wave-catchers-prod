@@ -20,6 +20,7 @@
    <link href="css/normalize.css" rel="stylesheet" type="text/css">
    <link href="css/index.css" rel="stylesheet" type="text/css">
    <link href="css/mint.css" rel="stylesheet" type="text/css">
+   <link href="css/lookup.css" rel="stylesheet" type="text/css">
    <script
       type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
    <link href="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true" rel="shortcut icon" type="image/x-icon">
@@ -29,16 +30,9 @@
 <body class="body">
    <div id="top">
       <div id="title-section" class="header">
-         <!-- <a href="index.html" id="logo-img">
-            <img src="images/ex1.jpeg" style="width:70%;border-radius: 50%;">
-         </a> -->
          <div id="title">
-            <!-- <img src="images/tejiverse-header.png"> -->
             <a href="./index.html" class="title-link">WAVE CATCHERS</a>
          </div>
-         <!-- <a href="index.html" class="hide-on-desktop" id="logo-img">
-            <img src="images/ex1.jpeg" style="width:70%;border-radius: 50%;">
-         </a> -->
       </div>
       <div id="header" class="header hide-on-mobile">
          <div class="header-menu">
@@ -131,146 +125,9 @@
       </div>
       
    </div>
-   <div id="mint-container" class="section body-section body-1 wf-section">
-      <img src="images/wcgif2.gif" class="hide-on-mobile mint-img" style="margin-right:2%;">
+   <div id="mint-container" class="section body-section body-1 wf-section" style="height: 70%;text-align: center;">
       <div id="mint" class="container w-container box">
-         <div id="mint-tools">
-            <h1 style="text-align: center;">CATCH THE WAVE</h1>
-            <div class="modal-info">
-               <h2 class="heading">Minted</h2>
-               <h2 id="mintedCount" class="heading"><span id="num-minted">-</span>/3334</h2>
-            </div>
-            <div class="modal-info">
-               <h2 class="heading">Price</h2>
-               <h2 id="totalMintPrice" class="heading"><span id="current-cost">0.025 Ξ</span></h2>
-            </div>
-            <div>
-               <p class="main-paragraph hidden" id="quantity-controls">
-                  <button class="increment-button" id="mint-minus" onclick="decrementClaim();updatePrice()">⊖</button>
-                  <span id="number-to-mint">1</span>
-                  <button class="increment-button" id="mint-plus" onclick="incrementClaim();updatePrice()">⊕</button>
-                  <br><br>
-                  <button class="button" id="max-button" onclick="setMaxMint()">MAX</button>
-               </p>
-               <div style="text-align: center;">
-                  <h2 id="sold-out"></h2>
-               </div>
-               <div style="text-align: center;">
-                  <h2 id="whitelisted"></h2>
-               </div>
-               <div class="mint-info hidden" id="mint-closed" style="text-align: center;">
-                  <h2>Minting is currently closed!</h2>
-               </div>
-            </div>
-         </div>
-         <div id="mint-buttons" style="text-align: center;">
-            <button id="claim-button" class="button hidden" onclick="ogMint()">CLAIM OG</button>
-            <button id="mint-button" class="button hidden" onclick="publicMint()">MINT</button>
-         </div>
-      </div>
-      <img src="images/wcgif3.gif" class="hide-on-mobile mint-img" style="margin-left:2%;">
-   </div>
-   <h1 id="roadmap" style="text-align: center;color: white;">
-      <img class="down-arrow" src="images/down-arrow-black.png"> ROADMAP <img class="down-arrow" src="images/down-arrow-black.png">
-   </h1>
-   <div class="section body-section body-1 wf-section">
-      <div id="about" class="container w-container box">
-         <span class="left-number">1</span>
-         <div id="about-text-desktop-1" class="hide-on-mobile">
-            <h2>Mint</h2>
-            <p style="margin-bottom: 17px;">
-               Public mint and free claims (for OG members) go live in a stealth drop. Once your Wave Catcher hits your wallet, $COCO begins accruing, without any need to stake. 
-            </p>
-         </div>
-         <h1 class="hide-on-desktop">Mint</h1>
-         <div id="about-gif">
-            <img id="wc-gif" src="images/ex1.jpeg" style="width: 100%;">
-         </div>
-         <div id="about-text-mobile" class="hide-on-desktop">
-            <p>
-               Public mint and free claims (for OG members) go live in a stealth drop. Once your Wave Catcher hits your wallet, $COCO begins accruing, without any need to stake. 
-            </p>
-         </div>
-      </div>
-   </div>
-   <div class="section body-section body-1 wf-section">
-      <div id="about" class="container w-container box">
-         <div class="right-number">2</div>
-         <h1 class="hide-on-desktop">WL Market</h1>
-         <div id="about-gif">
-            <img id="wc-gif" src="images/ex3.png" style="width: 100%;">
-         </div>
-         <div id="about-text-desktop-2" class="hide-on-mobile">
-            <h2>Whitelist Market</h2>
-            <p>
-               After a 24 hour reveal period, the first on-chain marketplace goes live on our website. Starting on day 1, we will have multiple whitelists available for purchase with $COCO. When a whitelist is purchased, $COCO is burned, creating a deflationary mechanism.
-            </p>
-         </div>
-         <div id="about-text-mobile" class="hide-on-desktop">
-            <p>
-               After a 24 hour reveal period, the first on-chain marketplace goes live on our website. Starting on day 1, we will have multiple whitelists for purchase with $COCO. When a whitelist is purchased, $COCO is burned, creating a deflationary mechanism.
-            </p>
-         </div>
-      </div>
-   </div>
-   <div class="section body-section body-1 wf-section">
-      <div id="about" class="container w-container box">
-         <span class="left-number">3</span>
-         <div id="about-text-desktop-1" class="hide-on-mobile">
-            <h2>Alpha Channels + NFT Worlds</h2>
-            <p style="margin-bottom: 17px;">
-               Creation of the Alpha channels for verified Wave Catchers holders, with multiple calls every day. We will purchase and build out an NFT World, while beginning the development of playable VX Wave Catchers. These will be free to claim for holders.
-            </p>
-         </div>
-         <h1 class="hide-on-desktop">Alpha + NFT Worlds</h1>
-         <div id="about-gif">
-            <img id="wc-gif" src="images/ex4.png" style="width: 100%;">
-         </div>
-         <div id="about-text-mobile" class="hide-on-desktop">
-            <p>
-               Creation of the Alpha channels for verified Wave Catchers holders, with multiple calls every day. We will purchase and build out an NFT World, while beginning the development of playable VX Wave Catchers. These will be free to claim for holders.
-            </p>
-         </div>
-      </div>
-   </div>
-   <div class="section body-section body-1 wf-section">
-      <div id="about" class="container w-container box">
-         <span class="right-number">4</span>
-         <h1 class="hide-on-desktop">User Listings</h1>
-         <div id="about-gif">
-            <img id="wc-gif" src="images/ex2.png" style="width: 100%;">
-         </div>
-         <div id="about-text-desktop-2" class="hide-on-mobile">
-            <h2>Market Extension - User Listings</h2>
-            <p>
-               We will be building an extension to the marketplace where users will be able to create on-chain whitelist listings with their own allocations from other projects. People will be able to swap their whitelist with other Wave Catchers holders for $COCO, further expanding the $COCO economy. L2 solutions will also be explored to minimize gas fees.
-            </p>
-         </div>
-         <div id="about-text-mobile" class="hide-on-desktop">
-            <p>
-               We will be building an extension to the marketplace where users will be able to create on-chain whitelist listings with their own allocations from other projects. People will be able to swap their whitelist with other Wave Catchers holders for $COCO, further expanding the $COCO economy. L2 solutions will also be explored to minimize gas fees.
-            </p>
-         </div>
-      </div>
-   </div>
-   <div class="section body-section body-1 wf-section">
-      <div id="about" class="container w-container box">
-         <span class="left-number">5</span>
-         <div id="about-text-desktop-1" class="hide-on-mobile">
-            <h2>&lt;REDACTED&gt;</h2>
-            <p style="margin-bottom: 17px;">
-               Use $COCO in our P2E by &lt;REDACTED&gt;... have we said too much already? 
-            </p>
-         </div>
-         <h1 class="hide-on-desktop">&lt;REDACTED&gt;</h1>
-         <div id="about-gif">
-            <img id="wc-gif" src="images/ex6.png" style="width: 100%;">
-         </div>
-         <div id="about-text-mobile" class="hide-on-desktop">
-            <p>
-               Use $COCO in our P2E by &lt;REDACTED&gt;... have we said too much already?
-            </p>
-         </div>
+            <h1>COMING SOON...</h1><br>
       </div>
    </div>
    <img src="images/WebsiteBG-mobile.png" loading="lazy" alt="" class="banner-img fixed-banner hide-on-desktop">
@@ -298,7 +155,7 @@
          </div>
       </div>
    </div>
-   <div id="copyright-div"><a href="./terms-and-conditions.html" class="link" target="_blank">VIEW TERMS AND CONDITIONS</a></div>
+   <div id="copyright-div" style="position: absolute;bottom: 0;width: 100%;"><a href="./terms-and-conditions.html" class="link" target="_blank">VIEW TERMS AND CONDITIONS</a></div>
    <div id="pending-transactions"></div>
    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=611d0d9b752438eba744e08d"
       type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -306,7 +163,7 @@
    <script type="application/javascript" src="https://cdn-cors.ethers.io/lib/ethers-5.5.1.umd.min.js"></script>
    <link href="css/webflow.css" rel="stylesheet" type="text/css">
    <script src="./scripts/utils.js"></script>
-   <script src="./scripts/mintEthers.js"></script>
+   <script src="./scripts/lookupEthers.js"></script>
 </body>
 
 </html>
