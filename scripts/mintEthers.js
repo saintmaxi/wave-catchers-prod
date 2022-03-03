@@ -151,7 +151,7 @@ const checkWhitelistStatus = async() => {
             $("#claim-button").removeClass("hidden");
         }
         else {
-            $("#whitelisted").html(`Sorry, you are not OG! Purchase on secondary on <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a>.`);
+            $("#whitelisted").html(`Sorry, you are not OG or have already claimed!! Purchase on secondary on <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a>.`);
             $("#claim-button").addClass("hidden");
         }
     }
