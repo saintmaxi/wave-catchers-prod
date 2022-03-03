@@ -136,7 +136,6 @@ const checkMintingLive = async() => {
     else {
         $("#mint-button").removeClass("hidden");
         $("#quantity-controls").removeClass("hidden");
-        // $("#claim-button").removeClass("hidden");
         $("#mint-closed").addClass("hidden");
     }
     return live;
@@ -179,8 +178,14 @@ const publicMint = async() => {
         });   
     }
     catch (error) { // edit error messages
-        if ((error.message).includes("Can only mint max 3 in whitelist")) {
-            await displayErrorMessage(`Error: Max ${MAX_MINT_WL} mints for WL!`)
+        if ((error.message).includes("Sale is not active")) {
+            await displayErrorMessage(`Error: Sale is not active!`)
+        }
+        else if ((error.message).includes("Exceeds max supply")) {
+            await displayErrorMessage(`Error: Mint would exceed max supply!`)
+        }
+        else if ((error.message).includes("Incorrect ETH value sent")) {
+            await displayErrorMessage(`Error: Incorrect ETH value sent!`)
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
@@ -210,8 +215,17 @@ const ogMint = async() => {
         }
     }
     catch (error) { // edit error messages
-        if ((error.message).includes("Can only mint max 3 in whitelist")) {
-            await displayErrorMessage(`Error: Max ${MAX_MINT_WL} mints for WL!`)
+        if ((error.message).includes("Sale is not active")) {
+            await displayErrorMessage(`Error: Sale is not active!`)
+        }
+        else if ((error.message).includes("No supply left for OG")) {
+            await displayErrorMessage(`Error: No supply left for OG!`)
+        }
+        else if ((error.message).includes("Already claimed")) {
+            await displayErrorMessage("Error: Already claimed OG!");
+        }
+        else if ((error.message).includes("Invalid merkle proof")) {
+            await displayErrorMessage("Error: Invalid merkle proof!");
         }
         else if ((error.message).includes("User denied transaction signature")) {
             console.log("Transaction rejected.");
@@ -226,12 +240,21 @@ const ogMint = async() => {
 
 const updateMintInfo = async() => {
     let minted = Number(await wavecatchers.totalSupply());
+    let wlLeft = Number(await wavecatchers.wlSupplyLeft());
     totalMinted = minted;
     $("#num-minted").text(minted);
     if (minted == MAX_SUPPLY) {
         $("#sold-out").html(`SOLD OUT! <br><br>AVAILABLE ON <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a> & <a href="${looksrareLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:green;">LOOKSRARE⬈</a>`);
         $("#mint-button").remove();
         $("#claim-button").remove();
+        $("#quantity-controls").remove();
+    }
+    else if (wlLeft == 0) {
+        $("#claim-button").remove();
+        $("#whitelisted").remove()();
+    }
+    else if (minted == (MAX_SUPPLY - wlLeft)) {
+        $("#mint-button").remove();
         $("#quantity-controls").remove();
     }
 }
