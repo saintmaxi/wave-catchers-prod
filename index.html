@@ -141,6 +141,7 @@
                <h2 class="heading">LIMIT</h2>
                <h2 id="totalMintPrice" class="heading"><span id="current-cost">10/TXN</span></h2>
             </div>
+            <span class="hidden"id="number-to-mint">1</span>
             <div>
                <p class="main-paragraph hidden" id="quantity-controls">
                   <button class="increment-button" id="mint-minus" onclick="decrementClaim();updatePrice()">⊖</button>
@@ -161,7 +162,7 @@
             </div>
          </div>
          <div id="mint-buttons" style="text-align: center;">
-            <button id="claim-button" class="button hidden" onclick="ogMint()">CLAIM OG</button>
+            <button id="claim-button" class="button" onclick="ogMint()">CLAIM OG</button>
             <button id="mint-button" class="button hidden" onclick="publicMint()">MINT</button>
          </div>
       </div>
