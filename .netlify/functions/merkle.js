@@ -30,11 +30,12 @@ exports.handler = async function(event, context) {
       }
     
       let proof;
+      let lowercaseAddr = addr.toLowerCase();
       if (whitelist.includes(checksumAddr)) {
         proof = await(getProof(checksumAddr));
       }
-      else if (whitelist.includes(addr)) {
-        proof = await(getProof(addr));
+      else if (whitelist.includes(lowercaseAddr)) {
+        proof = await(getProof(lowercaseAddr));
       }
       else {
         return { statusCode: 400, body: "Not in whitelist" };
