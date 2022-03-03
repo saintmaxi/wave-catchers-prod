@@ -245,6 +245,7 @@ const updateMintInfo = async() => {
     $("#num-minted").text(minted);
     if (minted == MAX_SUPPLY) {
         $("#sold-out").html(`SOLD OUT! <br><br>AVAILABLE ON <a href="${openseaLink}" target="_blank" class="w-inline-block" style="text-decoration:none;color:#03B4FC;">OPENSEA⬈</a>`);
+        $("#whitelisted").remove();
         $("#mint-button").remove();
         $("#claim-button").remove();
         $("#quantity-controls").remove();
