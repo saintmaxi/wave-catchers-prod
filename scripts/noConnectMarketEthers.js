@@ -296,6 +296,7 @@ ethereum.on("accountsChanged", async (accounts_) => {
 
 window.onload = async() => {
     if (!(await getAddress())) {
+        console.log("using infura")
         const listings = await fetch(`https://www.wavecatchers.io/.netlify/functions/listings?get=true`).then(res => res.text());
         const jsonData = listings ? JSON.parse(listings) : [];
         $("#live-collections").empty();
@@ -312,6 +313,7 @@ window.onload = async() => {
         }
     }
     else {
+        console.log("using wallet")
         await updateInfo();
         await loadCollectionsData();
         await loadCollections();
