@@ -3,7 +3,7 @@
         "name": "Kiwami",
         "description": "Designed in the Metaverse<br><br>Born in Japan.<br><br>Purchase a Mintlist slot to secure your spot at Tengoku Club.",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/kiwami.gif?raw=true",
-        "website": "#",
+        "website": "http://twitter.com/KiwamiNFT",
         "twitter": "http://twitter.com/KiwamiNFT",
         "max-slots": 10
         },
@@ -27,7 +27,7 @@
         "name": "Smol Potions",
         "description": "The forgotten art of black $MAGIC. Who knows what these potions are capable of....<br><br>Free mint on L2",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolpotion.png?raw=true",
-        "website": "#",
+        "website": "https://twitter.com/SmolPotions",
         "twitter": "https://twitter.com/SmolPotions",
         "max-slots": 10
     },
@@ -59,15 +59,15 @@
         "name": "Genesis Dragons v2",
         "description": "The v2 Collection of Genesis Dragons, a collection of 250 Pixel Dragons Created by @NiftyDragons.<br><br>Join the Thunder!",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/genesisdragons.jpeg?raw=true",
-        "website": "#",
-        "twitter": "https://twitter.com/GenesisDragons",
+        "website": "https://twitter.com/SoulSplicersNFTs",
+        "twitter": "https://twitter.com/SoulSplicersNFTs",
         "max-slots": 20
     },
     "8": {
         "name": "Soul Splicers",
         "description": "Building the next generation of blockchain gaming, starting with a P2E roguevania.<br><br>No empty promises, gameplay first.",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
-        "website": "#",
+        "website": "https://twitter.com/SoulSplicersNFT",
         "twitter": "https://twitter.com/SoulSplicersNFT",
         "max-slots": 15
     },
@@ -75,7 +75,7 @@
         "name": "Smol Obits",
         "description": "Smol Obits is a collection of 4269 prehistoric, skeletal ancestors of Smol Brains<br><br>Free Mint on Arbitrum",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
-        "website": "#",
+        "website": "https://twitter.com/SmolObits",
         "twitter": "https://twitter.com/SmolObits",
         "max-slots": 20
     },
@@ -83,7 +83,7 @@
         "name": "Elefrens",
         "description": "5555 Elephant Baby Calves on arbitrum protecting endangered Elephants and African wildlife.<br>NFT STAKING. DAO. GAME. AIRDROPS. CHARITY.",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/elefrens.jpeg?raw=true",
-        "website": "#",
+        "website": "https://twitter.com/Elefrens",
         "twitter": "https://twitter.com/Elefrens",
         "max-slots": 10
     }
