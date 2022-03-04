@@ -10,14 +10,9 @@ const marketAbi = () => {
 
 const market = new ethers.Contract(marketAddress, marketAbi(), provider);
 
-var collectionsData;
-
-async function loadCollectionsData() {
-    collectionsData = await $.getJSON('./data/partner-collections.json');
-}
+var collectionsData = require("./partner-collections.json");
 
 const getCollections = async() => {
-    await loadCollectionsData();
     let numCollections = Number(await market.whitelistCounter());
     let liveJSX = "";
     let pastJSX = "";
@@ -94,7 +89,7 @@ exports.handler = async function(event, context) {
             return { statusCode: 400, body: "Missing query parameters" };
          }
 
-         let listings = await loadCollectionsData();
+         let listings = await getCollections();
 
          return {
             statusCode: 200,
