@@ -2,6 +2,7 @@ const ethers = require('ethers');
 
 const infuraKey = process.env.INFURA_KEY;
 const provider = new ethers.providers.InfuraProvider("mainnet", infuraKey);
+const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/coco.png?raw=true";
 
 const marketAddress = "0x061B8879C93B0289437ED45cADFA614c14971C84";
 const marketAbi = () => { 
@@ -32,12 +33,6 @@ const getCollections = async() => {
         if (minted != maxSlots) {
             numLive += 1;
             let button;
-            if (winners.includes(await getAddress())) {
-                button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
-            }
-            else {
-                button = `<button class="mint-prompt-button button" id="${id}-mint-button" onclick="purchase(${id})">PURCHASE</button>`;
-            }
             let fakeJSX = `<div class="partner-collection" id="project-${id}">
                             <a href="${collection["twitter"]}" target="_blank">
                                 <img class="collection-twitter" src="./images/twitter-white.png">
