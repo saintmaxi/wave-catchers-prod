@@ -295,7 +295,7 @@ ethereum.on("accountsChanged", async (accounts_) => {
 });
 
 window.onload = async() => {
-    if (!(await getAddress())) {
+    if (!(await getAddress()) || window.ethereum == undefined) {
         console.log("using infura")
         const listings = await fetch(`https://www.wavecatchers.io/.netlify/functions/listings?get=true`).then(res => res.text());
         const jsonData = listings ? JSON.parse(listings) : [];
