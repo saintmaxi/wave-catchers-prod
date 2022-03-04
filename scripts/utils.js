@@ -1,3 +1,5 @@
+// a saintmaxi joint
+
 async function displayErrorMessage(message, timed=true) {
     if (!($("#error-popup").length)) {
         let fakeJSX = `<div id="error-popup"><p>${message}</p></div>`;
@@ -48,3 +50,11 @@ function toggleMenu() {
     el.classList.toggle('expanded')
     el.classList.toggle('collapsed')
  }
+
+ function clearPendingTxs() {
+    localStorage.removeItem("WaveCatchersPendingTxs");
+    localStorage.removeItem("CocoMarketPendingTxs");
+    localStorage.removeItem("CocoPendingTxs");
+    pendingTransactions.clear();
+    location.reload();
+};
