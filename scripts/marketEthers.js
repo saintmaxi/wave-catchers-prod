@@ -296,28 +296,28 @@ ethereum.on("accountsChanged", async (accounts_) => {
 
 window.onload = async() => {
     if (!(await getAddress())) {
-        const connectPrompt = ` <div id="ex1" class="partner-collection example">
-                                    <div class="cover">
-                                        <button class="button" onclick="connect()">CONNECT WALLET TO VIEW LISTINGS</button>
-                                    </div>
-                                    <img class="collection-img" src="./images/ticket.jpeg">
-                                    <div class="collection-info">
-                                        <h3>???</h3>
-                                        <h4>??? | ???/??? Purchased</h4>
-                                       <div class="inside-text collection-description"> An innovative group of characters residing on the Ethereum blockchain. Whitelist now available for
-                                         purchase on Wave Catchers Markeplace. Secure your spot now before they're all gone!
-                                        </div>
-                                        <button class="button">PURCHASE</button>
-                                    </div>
-                                </div>`
+        console.log("using infura")
+        const listings = await fetch(`https://www.wavecatchers.io/.netlify/functions/listings?get=true`).then(res => res.text());
+        const jsonData = listings ? JSON.parse(listings) : [];
         $("#live-collections").empty();
         $("#past-collections").empty();
-        $("#live-collections").append(connectPrompt);
-        $("#past-collections").append(connectPrompt);
+        $("#live-collections").append(jsonData.liveJSX);
+        $("#past-collections").append(jsonData.pastJSX);
+        $("#num-live").text(` (${jsonData.numLive})`);
+        $("#num-past").text(` (${jsonData.numPast})`);
+        if (jsonData.numLive >= 4) {
+            $("#scroll-indicator-live").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL<span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
+        }
+        if (jsonData.numPast >= 4) {
+            $("#scroll-indicator-past").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL <span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
+        }
     }
-    await updateInfo();
-    await loadCollectionsData();
-    await loadCollections();
+    else {
+        console.log("using wallet")
+        await updateInfo();
+        await loadCollectionsData();
+        await loadCollections();
+    }
 };
 
 window.onunload = async()=>{
