@@ -39,7 +39,7 @@ const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/
 
 if (window.ethereum == undefined) {
     displayErrorMessage('Use a web3 enabled browser to browse listings!');
-    await loadInfuraListings();
+    loadInfuraListings();
 }
 
 // Initiate Provider 
