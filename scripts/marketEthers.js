@@ -39,6 +39,7 @@ const cocoImgURL = "https://github.com/saintmaxi/wave-catchers/blob/main/images/
 
 if (window.ethereum == undefined) {
     displayErrorMessage('Use a web3 enabled browser to browse listings!');
+    await loadInfuraListings();
 }
 
 // Initiate Provider 
@@ -294,23 +295,27 @@ ethereum.on("accountsChanged", async (accounts_) => {
     location.reload();
 });
 
+const loadInfuraListings = async() => {
+    const listings = await fetch(`https://www.wavecatchers.io/.netlify/functions/listings?get=true`).then(res => res.text());
+    const jsonData = listings ? JSON.parse(listings) : [];
+    $("#live-collections").empty();
+    $("#past-collections").empty();
+    $("#live-collections").append(jsonData.liveJSX);
+    $("#past-collections").append(jsonData.pastJSX);
+    $("#num-live").text(` (${jsonData.numLive})`);
+    $("#num-past").text(` (${jsonData.numPast})`);
+    if (jsonData.numLive >= 4) {
+        $("#scroll-indicator-live").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL<span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
+    }
+    if (jsonData.numPast >= 4) {
+        $("#scroll-indicator-past").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL <span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
+    }
+}
+
 window.onload = async() => {
-    if (!(await getAddress()) || window.ethereum == undefined) {
+    if (!(await getAddress())) {
         console.log("using infura")
-        const listings = await fetch(`https://www.wavecatchers.io/.netlify/functions/listings?get=true`).then(res => res.text());
-        const jsonData = listings ? JSON.parse(listings) : [];
-        $("#live-collections").empty();
-        $("#past-collections").empty();
-        $("#live-collections").append(jsonData.liveJSX);
-        $("#past-collections").append(jsonData.pastJSX);
-        $("#num-live").text(` (${jsonData.numLive})`);
-        $("#num-past").text(` (${jsonData.numPast})`);
-        if (jsonData.numLive >= 4) {
-            $("#scroll-indicator-live").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL<span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
-        }
-        if (jsonData.numPast >= 4) {
-            $("#scroll-indicator-past").html(`<img class="down-arrow" src="images/down-arrow.png"> SCROLL <span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">`);
-        }
+        await loadInfuraListings();
     }
     else {
         console.log("using wallet")
