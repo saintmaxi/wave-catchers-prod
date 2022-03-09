@@ -126,5 +126,13 @@
         "website": "https://twitter.com/smolsharks",
         "twitter": "https://twitter.com/smolsharks",
         "max-slots": 15
+    },
+     "17": {
+        "name": "Everai",
+        "description": "Heroes of the Metaverse. A long-lasting brand based on the Everai Heroes and their Universe.",
+        "image": "https://raw.githubusercontent.com/saintmaxi/wave-catchers-prod/main/images/everai.jpeg?raw=true",
+        "website": "https://everai.xyz/",
+        "twitter": "https://twitter.com/TheEverai",
+        "max-slots": 5
     }
 }
