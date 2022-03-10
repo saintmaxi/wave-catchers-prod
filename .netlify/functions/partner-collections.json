@@ -144,5 +144,21 @@
         "website": "https://thesquids.io/",
         "twitter": "https://twitter.com/TheSquids_NFT",
         "max-slots": 15
-    }
+    },
+    "22": {
+        "name": "Magic Monkies",
+        "description": "A collection of cute magic monkies on arbitrum. Free mint & P2E.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/monkie.jpeg?raw=true",
+        "website": "https://twitter.com/magicmonkies",
+        "twitter": "https://twitter.com/magicmonkies",
+        "max-slots": 25
+    },
+    "23": {
+        "name": "Smulips",
+        "description": "5,000 Smulips unleashed on Arbitrum, Join the garden. Free mint within the $MAGIC metaverse.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smulip.jpeg?raw=true",
+        "website": "https://www.smulips.com/",
+        "twitter": "https://twitter.com/Smulips",
+        "max-slots": 10
+    },
 }
