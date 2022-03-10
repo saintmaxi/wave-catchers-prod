@@ -31,30 +31,8 @@
         "twitter": "https://twitter.com/SmolPotions",
         "max-slots": 10
     },
-    "4": {
-        "name": "ApexWolves",
-        "description": "5000 of the freshest wolves building their pack on the Ethereum blockchain.<br><br>Loyalty points applicable: 2/16/2022 - Present",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/apexwolves.jpeg?raw=true",
-        "website": "https://www.apexwolves.io/",
-        "twitter": "https://twitter.com/0xAWNFT",
-        "max-slots": 10
-    },
-    "5": {
-        "name": "Fat Cats DAO",
-        "description": "5000 unique NFTs that double as membership tokens and a share of all Fat Cats holdings. Join us as we build the premier blue chip NFT portfolio & community!",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/fatcatsdao.gif?raw=true",
-        "website": "https://www.fatcats.art/",
-        "twitter": "https://twitter.com/FatCatsDao",
-        "max-slots": 100
-    },
-    "6": {
-        "name": "It Remains",
-        "description": "The beyond dystopian NFT universe franchise. A genesis collection of 7777 Resisters. With the art director of WALL-E and Finding Nemo.",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/itremains.jpeg?raw=true",
-        "website": "https://itremains.io/",
-        "twitter": "https://twitter.com/ItRemainsNFT",
-        "max-slots": 10
-    },
+   
+    
     "7": {
         "name": "Genesis Dragons v2",
         "description": "The v2 Collection of Genesis Dragons, a collection of 250 Pixel Dragons Created by @NiftyDragons.<br><br>Join the Thunder!",
