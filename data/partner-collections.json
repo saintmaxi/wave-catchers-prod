@@ -205,5 +205,14 @@
         "twitter": "https://twitter.com/Smulips",
         "max-slots": 10,
         "display-on-market": "true"
+    },
+    "24": {
+        "name": "KaijuKing #5168",
+        "description": "Join the Kingz and live forever as a legend.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kaiju.png?raw=true",
+        "website": "https://kaijukingz.io",
+        "twitter": "https://twitter.com/kaijukingz/",
+        "max-slots": 1,
+        "display-on-market": "true"
     }
 }
