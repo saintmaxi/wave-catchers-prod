@@ -316,6 +316,9 @@ window.onload = async() => {
         await updateInfo();
         await loadCollectionsData();
         await loadCollections();
+        let userAddress = await getAddress();
+        let cocoBalance = await coco.balanceOf(userAddress);
+        $("#coco-balance").html(`${(Number(formatEther(cocoBalance))).toFixed(2)}`);
     }
 };
 
