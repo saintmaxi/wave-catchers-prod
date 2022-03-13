@@ -42,7 +42,7 @@
         "website": "https://www.apexwolves.io/",
         "twitter": "https://twitter.com/0xAWNFT",
         "max-slots": 10,
-        "display-on-market": "false"
+        "display-on-market": "true"
     },
     "5": {
         "name": "Fat Cats DAO",
