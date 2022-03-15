@@ -115,7 +115,7 @@ const setMaxMint = async() => {
 
 const getMerkleProof = async() => {
     const _senderAddress = await getAddress();
-    const _proof = "INSERT API ENDPOINT"
+    const _proof = await fetch(`https://www.wavecatchers.io/.netlify/functions/merkle?addr=${_senderAddress}`).then(res => res.text());
     try {
         const _proofArray = _proof ? JSON.parse(_proof) : [];
         return _proofArray
