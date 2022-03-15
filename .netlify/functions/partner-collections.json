@@ -242,7 +242,7 @@
         "max-slots": 5,
         "display-on-market": "true"
     },
-     "28": {
+    "28": {
         "name": "PaperHands",
         "description": "Presenting the world's first ever Paint-2-Earn NFT Game. PaperHands is a simple play-to-earn game where one player draws what is indicated by the game, while other players attempt to guess what is being drawn.",
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pphand.jpeg?raw=true",
