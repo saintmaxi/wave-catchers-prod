@@ -250,5 +250,14 @@
         "twitter": "https://twitter.com/PaperHandsGame",
         "max-slots": 40,
         "display-on-market": "true"
+    },
+    "29": {
+        "name": "Gummies Gang",
+        "description": "6969 chewy NFT friends who got hungry and ate the forbidden Ethereum rainbow.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/gummies.jpeg?raw=true",
+        "website": "https://twitter.com/GummiesGangNFT",
+        "twitter": "https://twitter.com/GummiesGangNFT",
+        "max-slots": 10,
+        "display-on-market": "true"
     }
 }
