@@ -15,7 +15,7 @@
         "website": "https://psyker.game/",
         "twitter": "http://twitter.com/psykergame",
         "max-slots": 50,
-        "display-on-market": "true"
+        "display-on-market": "false"
         },
     "2": {
         "name": "War Kittens",
