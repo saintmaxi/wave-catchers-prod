@@ -259,5 +259,14 @@
         "twitter": "https://twitter.com/GummiesGangNFT",
         "max-slots": 10,
         "display-on-market": "true"
+    },
+    "30": {
+        "name": "Wagmi World",
+        "description": "Welcome to Wagmi World ✨ a project by @neokseye",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/wworld.jpeg?raw=true",
+        "website": "https://twitter.com/Wagmiworld",
+        "twitter": "https://twitter.com/wagmiworld",
+        "max-slots": 25,
+        "display-on-market": "true"
     }
 }
