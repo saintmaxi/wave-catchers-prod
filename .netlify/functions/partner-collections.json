@@ -177,7 +177,7 @@
         "website": "https://www.introverse.club/",
         "twitter": "https://twitter.com/_introverse_",
         "max-slots": 15,
-        "display-on-market": "true"
+        "display-on-market": "false"
     },
     "21": {
         "name": "The Squids",
