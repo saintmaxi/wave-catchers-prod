@@ -14,9 +14,9 @@
    <meta charset="utf-8">
    <title>Wave Catchers | Lookup</title>
    <meta content="3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again." name="description">
-   <meta content="Wave Catchers" property="og:title">
+   <meta content="Wave Catchers | Lookup" property="og:title">
    <meta content="3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again." property="og:description">
-   <meta content="Wave Catchers" property="twitter:title">
+   <meta content="Wave Catchers | Lookup" property="twitter:title">
    <meta content="3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again." property="twitter:description">
    <meta property="og:type" content="website">
    <meta property="og:image" content="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true">
@@ -64,6 +64,11 @@
                LOOKUP
             </a>
          </div>
+         <div class="header-menu">
+            <a href="./raffle.html" class="link">
+               RAFFLE
+            </a>
+         </div>
       </div>
       <div class="hide-on-mobile" id="socials">
          <a href="https://twitter.com/wavecatchersnft" target="_blank" class="link w-inline-block">
@@ -83,10 +88,16 @@
          </a>
       </div>
       <div id="desktop-wallet-connect-div">
-         <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>CONNECT</button>
+         <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>
+            <span id="account-text">CONNECT</span>
+            <span id="account-chain-logo"></span>
+         </button>
       </div>
       <div id="mobile-wallet-connect-div" class="hide-on-desktop">
-         <button id="mobile-account" href="#" class="button" onclick=connect()>CONNECT WALLET</button>
+         <button id="mobile-account" href="#" class="button" onclick=connect()>
+            <span id="mobile-account-text">CONNECT WALLET</span>
+            <span id="mobile-account-chain-logo"></span>
+         </button>
          <button id="navbar" href="#" class="button" onclick="toggleMenu()"></button>
       </div>
       <div id="expand-container">
@@ -112,6 +123,11 @@
                      LOOKUP
                   </a>
                </div>
+               <div class="header-menu">
+                  <a href="./raffle.html" class="link">
+                     RAFFLE
+                  </a>
+               </div>
             </div>
             <div class="hide-on-desktop" id="socials">
                <a href="https://twitter.com/wavecatchersnft" target="_blank" class="link w-inline-block">
@@ -132,7 +148,6 @@
             </div>
          </div>
       </div>
-      
    </div>
    <div id="mint-container" class="section body-section body-1 wf-section">
       <div id="mint" class="container w-container box"  style="text-align: center;">

@@ -53,7 +53,6 @@ var totalMinted;
 
 const connect = async()=>{
     await provider.send("eth_requestAccounts", []);
-    await revealMintPrompt();
 };
 
 const getAddress = async()=>{
@@ -257,23 +256,11 @@ const updateMintInfo = async() => {
     }
 }
 
-const updateCurrentChain = async() => {
-    if ((await getChainId()) !== correctChain) {
-        displayErrorMessage("Error: Wrong Network!", false);
-    }
-    else {
-        $("#error-popup").remove();
-        $("#block-screen-error").remove();
-    }
-}
-
 provider.on("network", async(newNetwork, oldNetwork) => {
-        if (oldNetwork) {
-            $("#refresh-notification").remove();
-            await updateCurrentChain();
-            await updateMintInfo();
-        }
-    });
+    if (oldNetwork) {
+        location.reload();
+    }
+});
 
 // Processing tx returns
 const waitForTransaction = async(tx_) => {
@@ -339,10 +326,29 @@ setInterval(async()=>{
     await checkWhitelistStatus();
 }, 5000)
 
+var chainLogoSet = false;
+
+const setChainLogo = async() => {
+    let chainLogo = "";
+    let chain = await getChainId();
+    if (chain == 1 || chain == 4) {
+        chainLogo = "<img src='https://github.com/saintmaxi/wave-catchers/blob/main/images/eth.png?raw=true' class='coco-icon'>";
+    }
+    else if (chain == 42161) {
+        chainLogo = "<img src='https://github.com/saintmaxi/wave-catchers/blob/main/images/arbitrum.png?raw=true' class='coco-icon'>";
+    }
+    chainLogoSet = true;
+    $("#account-chain-logo").html(chainLogo);
+    $("#mobile-account-chain-logo").html(chainLogo);
+}
+
 const updateInfo = async () => {
     let userAddress = await getAddress();
-    $("#account").html(`${userAddress.substr(0,9)}..`);
-    $("#mobile-account").text(`${userAddress.substr(0,9)}..`);
+    $("#account-text").html(`${userAddress.substr(0,7)}..`);
+    $("#mobile-account-text").html(`${userAddress.substr(0,12)}..`);
+    // if (!chainLogoSet) {
+    //     await setChainLogo();
+    // }
 };
 
 ethereum.on("accountsChanged", async(accounts_)=>{

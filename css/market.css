@@ -146,6 +146,13 @@
     width: 15%;
 }
 
+.collection-network {
+    position: absolute;
+    top: 1.2%;
+    right: 2%;
+    width: 13%;
+}
+
 .collection-discord {
     position: absolute;
     top: 1%;
@@ -383,10 +390,15 @@ h4 {
    100% { transform: translateY(0);} 
 }
 
-#scroll-indicator-live, #scroll-indicator-past {
+#scroll-indicator-live, #scroll-indicator-past, #scroll-indicator {
     -webkit-animation: bounce 1.3s infinite;
     animation: bounce 1.3s infinite;
     color: white !important;
+}
+
+.timer {
+    font-size: 1.3vw;
+    line-height: 1.3vw;
 }
 
 @media screen and (max-width: 767px) {
@@ -553,6 +565,11 @@ h4 {
 
     .mint-prompt-button {
         font-size: 3vh;
+    }
+
+    .timer {
+        font-size: 3vh;
+        line-height: 3vh;
     }
 }
 

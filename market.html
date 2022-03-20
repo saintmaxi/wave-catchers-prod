@@ -2,21 +2,20 @@
 <html data-wf-page="611d0d9b752438d09b44e08e" data-wf-site="611d0d9b752438eba744e08d">
 
 <head>
-   <!-- Global site tag (gtag.js) - Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0RH7VXSPC"></script>
+   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXJYT9J517"></script>
    <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-P0RH7VXSPC');
+      gtag('config', 'G-QXJYT9J517');
    </script>
    <meta charset="utf-8">
    <title>Wave Catchers | Market</title>
    <meta content="3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again." name="description">
-   <meta content="Wave Catchers" property="og:title">
+   <meta content="Wave Catchers | Market" property="og:title">
    <meta content="3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again." property="og:description">
-   <meta content="Wave Catchers" property="twitter:title">
+   <meta content="Wave Catchers | Market" property="twitter:title">
    <meta content="3334 Wave Catchers grant you access to the first on-chain whitelist marketplace. Earn $COCO by holding. Never grind for a whitelist again." property="twitter:description">
    <meta property="og:type" content="website">
    <meta property="og:image" content="https://github.com/saintmaxi/wave-catchers/blob/main/images/ex1.jpeg?raw=true">
@@ -63,6 +62,11 @@
                LOOKUP
             </a>
          </div>
+         <div class="header-menu">
+            <a href="./raffle.html" class="link">
+               RAFFLE
+            </a>
+         </div>
       </div>
       <div class="hide-on-mobile" id="socials">
          <a href="https://twitter.com/wavecatchersnft" target="_blank" class="link w-inline-block">
@@ -82,10 +86,16 @@
          </a>
       </div>
       <div id="desktop-wallet-connect-div">
-         <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>CONNECT</button>
+         <button class="button hide-on-mobile clickable" id="account" href="#" onclick=connect()>
+            <span id="account-text">CONNECT</span>
+            <span id="account-chain-logo"></span>
+         </button>
       </div>
       <div id="mobile-wallet-connect-div" class="hide-on-desktop">
-         <button id="mobile-account" href="#" class="button" onclick=connect()>CONNECT WALLET</button>
+         <button id="mobile-account" href="#" class="button" onclick=connect()>
+            <span id="mobile-account-text">CONNECT WALLET</span>
+            <span id="mobile-account-chain-logo"></span>
+         </button>
          <button id="navbar" href="#" class="button" onclick="toggleMenu()"></button>
       </div>
       <div id="expand-container">
@@ -109,6 +119,11 @@
                <div class="header-menu">
                   <a href="./lookup.html" class="link">
                      LOOKUP
+                  </a>
+               </div>
+               <div class="header-menu">
+                  <a href="./raffle.html" class="link">
+                     RAFFLE
                   </a>
                </div>
             </div>
@@ -135,8 +150,9 @@
    <div id="approval-container" class="section body-section body-1 wf-section hidden">
       <div id="approval" class="container w-container box" style="text-align: center;">
          <h1>APPROVE MARKETPLACE</h1><br>
-         <h3>In order to acquire WL slots with <img class="coco-icon" src="images/coco.png">, you must first approve the marketplace contract to spend your <img class="coco-icon" src="images/coco.png">.</h3><br>
-         <button class="button" id="approval-button" onclick="approveCocoToMarket()">APPROVE</button>
+         <h3>In order to acquire WL slots with <img class="coco-icon" src="images/coco.png">, you must first approve the V1 and V2 marketplace contracts to spend your <img class="coco-icon" src="images/coco.png">.</h3><br>
+         <button class="button" id="approval-button" onclick="approveCocoToMarket()">APPROVE V1</button>
+         <button class="button" id="approval-button-new" onclick="approveCocoToNewMarket()">APPROVE V2</button>
       </div>
    </div>
    <div class="section body-section body-1 wf-section">
@@ -144,12 +160,15 @@
          <button id="live-button" class="button active" onclick="showLive()">LIVE<span id="num-live"></span></button>
          <button id="past-button" class="button" onclick="showPast()">PAST<span id="num-past"></span></button>
       </div>
-      <h2 id="scroll-indicator-live" style="text-align: center;color: white;"></h2>
-      <h2 id="scroll-indicator-past" class="hidden" style="text-align: center;color: white;"></h2>
+      <h2 id="scroll-indicator-live" class="hide-on-mobile" style="text-align: center;color: white;"></h2>
+      <h2 id="scroll-indicator-past" class="hidden hide-on-mobile" style="text-align: center;color: white;"></h2>
+      <h2 id="scroll-indicator" class="hide-on-desktop" style="text-align: center;color: white;">
+         <img class="down-arrow" src="images/down-arrow.png"> SCROLL<span class="hide-on-mobile"> FOR MORE</span> <img class="down-arrow" src="images/down-arrow.png">
+      </h2>
       <div id="live-collections">
          <div id="ex1" class="partner-collection example">
             <div class="cover">
-               <button class="button" onclick="connect()">LOADING<span class="one">.</span><span class="two">.</span><span class="three">.</span></button>
+               <button class="button">LOADING<span class="one">.</span><span class="two">.</span><span class="three">.</span></button>
             </div>
             <img class="collection-img" src="./images/ticket.jpeg">
             <div class="collection-info">
@@ -165,7 +184,7 @@
       <div id="past-collections" class="hidden">
          <div id="ex2" class="partner-collection example">
             <div class="cover">
-               <button class="button" onclick="connect()">LOADING<span class="one">.</span><span class="two">.</span><span class="three">.</span></button>
+               <button class="button">LOADING<span class="one">.</span><span class="two">.</span><span class="three">.</span></button>
             </div>
             <img class="collection-img" src="./images/ticket.jpeg">
             <div class="collection-info">
