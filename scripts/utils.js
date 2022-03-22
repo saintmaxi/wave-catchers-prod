@@ -92,7 +92,7 @@ const loadInfuraListings = async() => {
 
 const loadInfuraRaffles = async() => {
     const raffles = await fetch(`https://www.wavecatchers.io/.netlify/functions/raffles?get=true`).then(res => res.text());
-    const jsonData = listings ? JSON.parse(listings) : [];
+    const jsonData = raffles ? JSON.parse(raffles) : [];
     if (jsonData.currentRaffle.raffleLive == false) {
         $("#raffle-title").html("No raffles live!");
     }
