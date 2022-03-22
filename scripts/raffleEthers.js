@@ -65,9 +65,15 @@ const connect = async()=>{
     await provider.send("eth_requestAccounts", []);
 };
 
-const getAddress = async()=>{
-    return await signer.getAddress()
-};
+const getAddress = async() => { 
+    try { 
+        return await signer.getAddress(); 
+    } 
+    catch { 
+        return false; 
+    }
+}; 
+
 
 const formatEther = (balance_)=>{
     return ethers.utils.formatEther(balance_)
