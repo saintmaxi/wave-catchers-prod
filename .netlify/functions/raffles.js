@@ -53,30 +53,20 @@ const getPastRaffles = async() => {
         // Raffle data from contract
         let raffleInfo = await market.getRaffle(id);
         let rafflePrice = Number(ethers.utils.formatEther(raffleInfo.price));
-        let userEntries = await getRaffleEntries(id);
         let expired = (raffleInfo.endTime < (Date.now() / 1000));
 
         // Data from JSON file
         let raffle = rafflesData[String(id)];
-        let hasEntered = await market.hasPurchasedRaffle(currentID, await getAddress());
 
         if (expired) {
             numPast +=1;
-            let button;
-            if (hasEntered) {
-                button = `<button disabled class="mint-prompt-button button purchased">ENTERED!</button>`;
-            }
-            else {
-                button = `<button disabled class="mint-prompt-button button purchased">EXPIRED</button>`;
-            }
             let fakeJSX = `<div class="partner-collection" id="raffle-${id}">
                             <img class="collection-img" src="${raffle["image"]}">
                             <div class="collection-info">
                                 <h3>${raffle["name"]}</h3>
                                 <h4>${rafflePrice} <img src="${cocoImgURL}" class="coco-icon"></h4>
-                                <h4>Your entries: ${userEntries}</h4>
                             </div>
-                            ${button}
+                            <button class="mint-prompt-button button" onclick="connect()">CONNECT</button>
                             </div>`
             pastJSX = fakeJSX + pastJSX;
         }
