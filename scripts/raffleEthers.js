@@ -560,7 +560,7 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 window.onload = async()=>{
     if (!(await getAddress())) {
         console.log("using infura")
-        await loadInfuraListings();
+        await loadInfuraRaffles();
     }
     else {
         console.log("using wallet")
