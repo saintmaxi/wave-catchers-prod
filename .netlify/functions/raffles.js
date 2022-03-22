@@ -28,7 +28,7 @@ const getLatestRaffle = async() => {
         }
     }
     else {
-        rafflePrice = Number(formatEther(raffleInfo.price));
+        rafflePrice = Number(ethers.utils.formatEther(raffleInfo.price));
         raffleImg = rafflesData[String(currentID)].image;
         raffleTitle = rafflesData[String(currentID)].name;
         capped = raffleInfo.capped;
@@ -52,7 +52,7 @@ const getPastRaffles = async() => {
 
         // Raffle data from contract
         let raffleInfo = await market.getRaffle(id);
-        let rafflePrice = Number(formatEther(raffleInfo.price));
+        let rafflePrice = Number(ethers.utils.formatEther(raffleInfo.price));
         let userEntries = await getRaffleEntries(id);
         let expired = (raffleInfo.endTime < (Date.now() / 1000));
 
@@ -104,7 +104,7 @@ exports.handler = async function(event, context) {
             return { statusCode: 400, body: "Missing query parameters" };
          }
 
-         let raffles = await getPastRaffles();
+         let raffles = await getRaffles();
 
          return {
             statusCode: 200,
