@@ -100,6 +100,7 @@ const loadInfuraRaffles = async() => {
         $("#raffle-title").html(jsonData.currentRaffle.raffleTitle);
         $("#current-raffle-img").attr("src", jsonData.currentRaffle.raffleImg);
         $("#base-raffle-price").html(jsonData.currentRaffle.rafflePrice);
+        $("#total-entries").html(jsonData.currentRaffle.totalEntries);
         if (jsonData.currentRaffle.capped) {
             $("#total-price").addClass("hidden");
             $("#max-msg").html("Max 1 entry!");

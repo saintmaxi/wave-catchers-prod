@@ -13,6 +13,18 @@ const market = new ethers.Contract(marketAddress, marketAbi(), provider);
 
 var rafflesData = require("./raffle-data.json");
 
+const getTotalEntries = async(id) => {
+    const eventFilter = market.filters.EnterRaffle(id);
+    const logs = await market.queryFilter(eventFilter);
+
+    let entries = 0;
+    for (i = 0; i < logs.length; i++) {
+        let amount = Number(logs[i].args._amount);
+        entries += amount;
+    }
+    return entries;
+}
+
 const getLatestRaffle = async() => {
     currentID = (await market.raffleCounter()) - 1;
     let raffleInfo = await market.getRaffle(currentID);
@@ -21,6 +33,7 @@ const getLatestRaffle = async() => {
     let raffleTitle;
     let rafflePrice;
     let raffleImg
+    let totalEntries = await getTotalEntries(currentID);
 
     if (expired) {
         return {
@@ -38,6 +51,7 @@ const getLatestRaffle = async() => {
             raffleTitle: raffleTitle,
             rafflePrice: rafflePrice,
             raffleImg: raffleImg,
+            totalEntries: totalEntries,
             capped: capped
         }
     }
@@ -54,6 +68,7 @@ const getPastRaffles = async() => {
         let raffleInfo = await market.getRaffle(id);
         let rafflePrice = Number(ethers.utils.formatEther(raffleInfo.price));
         let expired = (raffleInfo.endTime < (Date.now() / 1000));
+        let totalEntries = await getTotalEntries(currentID);
 
         // Data from JSON file
         let raffle = rafflesData[String(id)];
@@ -65,6 +80,7 @@ const getPastRaffles = async() => {
                             <div class="collection-info">
                                 <h3>${raffle["name"]}</h3>
                                 <h4>${rafflePrice} <img src="${cocoImgURL}" class="coco-icon"></h4>
+                                <h4>Total Entries: ${totalEntries}</h4>
                             </div>
                             <button class="mint-prompt-button button" onclick="connect()">CONNECT</button>
                             </div>`
