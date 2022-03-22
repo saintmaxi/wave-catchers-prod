@@ -106,12 +106,12 @@ exports.handler = async function(event, context) {
             return { statusCode: 400, body: "Missing query parameters" };
          }
 
-         let raffles = await getRaffles();
+         let raffles = await getPastRaffles();
 
          return {
             statusCode: 200,
             headers: { "content-type": "application/json" },
-            body: JSON.stringify(raffles.currentRaffle)
+            body: JSON.stringify(raffles)
           }
      
     } 
