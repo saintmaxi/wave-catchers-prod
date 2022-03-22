@@ -558,11 +558,18 @@ ethereum.on("accountsChanged", async(accounts_)=>{
 });
 
 window.onload = async()=>{
-    await updateInfo();
-    await loadRafflesData();
-    await getLatestRaffle();
-    await loadPastRaffles();
-    await getCocoBalance();
+    if (!(await getAddress())) {
+        console.log("using infura")
+        await loadInfuraListings();
+    }
+    else {
+        console.log("using wallet")
+        await updateInfo();
+        await loadRafflesData();
+        await getLatestRaffle();
+        await loadPastRaffles();
+        await getCocoBalance();
+    }
 };
 
 window.onunload = async()=>{
