@@ -100,7 +100,7 @@ const loadInfuraRaffles = async() => {
         $("#raffle-title").html(jsonData.currentRaffle.raffleTitle);
         $("#current-raffle-img").attr("src", jsonData.currentRaffle.raffleImg);
         $("#base-raffle-price").html(jsonData.currentRaffle.rafflePrice);
-        $("#total-entries").html(jsonData.currentRaffle.totalEntries);
+        $("#total-entries").html(`Total Entries: ${jsonData.currentRaffle.totalEntries}`);
         if (jsonData.currentRaffle.capped) {
             $("#total-price").addClass("hidden");
             $("#max-msg").html("Max 1 entry!");
@@ -108,7 +108,7 @@ const loadInfuraRaffles = async() => {
         }
         else {
             $("#total-price").removeClass("hidden");
-            $("#max-msg").html(`Unlimited entries!<br class="hide-on-desktop"><br class="hide-on-desktop"> Yours: <span id="your-entries">???</span>`);
+            $("#max-msg").html(`Unlimited entries!`);
             $("#entry-num").removeClass("hidden");
         }
     }
