@@ -87,8 +87,11 @@ const getPastRaffles = async() => {
 }
 
 const getRaffles = async() => {
+    console.log("getting raffles")
     let currentRaffle = await getLatestRaffle();
+    console.log("got latest raffles")
     let pastRaffles = await getPastRaffles();
+    console.log("got past raffles")
 
     return { 
             currentRaffle: currentRaffle,
