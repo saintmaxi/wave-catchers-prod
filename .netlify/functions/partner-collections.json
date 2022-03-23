@@ -428,5 +428,5 @@
         "max-slots": 5,
         "display-on-market": "true",
         "network": "eth"
-    },
+    }
 }
