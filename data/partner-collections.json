@@ -388,5 +388,35 @@
         "max-slots": 30,
         "display-on-market": "true",
         "network": "eth"
-    }
+    },
+    "40": {
+        "name": "Cyberia",
+        "description": "Enter the world of Cyberia and fight for your species in the first-ever decentralized Neurobot society!",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/cyberia.jpeg?raw=true",
+        "website": "https://entercyberia.com/",
+        "twitter": "https://twitter.com/EnterCyberia",
+        "max-slots": 7,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+     "41": {
+        "name": "I'm Starving",
+        "description": "Do you have some food? On-chain story driven community game launching soon on #Arbitrum",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/starving.jpeg?raw=true",
+        "website": "https://twitter.com/ImStarvingNFT",
+        "twitter": "https://twitter.com/ImStarvingNFT",
+        "max-slots": 15,
+        "display-on-market": "true",
+        "network": "arb"
+    }, 
+    "42": {
+        "name": "Shounen",
+        "description": "Shounens Inspired by Asian Animation & Culture",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/shounen.jpeg?raw=true",
+        "website": "https://nftshounen.com/",
+        "twitter": "https://twitter.com/NFTSHOUNEN",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    } 
 }
