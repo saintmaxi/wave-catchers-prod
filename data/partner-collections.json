@@ -418,5 +418,15 @@
         "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
-    } 
+    },
+    "43": {
+        "name": "The Squids (Refill)",
+        "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squid.gif?raw=true",
+        "website": "https://thesquids.io/",
+        "twitter": "https://twitter.com/TheSquids_NFT",
+        "max-slots": 5,
+        "display-on-market": "true",
+        "network": "eth"
+    }
 }
