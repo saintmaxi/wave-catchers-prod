@@ -458,5 +458,25 @@
         "max-slots": 5,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "47": {
+        "name": "Smolegends",
+        "description": "Smolegends is an NFT collection that turns into unique playable characters for our upcoming web-based roguelike deckbuilding game.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolegend.jpeg?raw=true",
+        "website": "https://discord.com/invite/smolegends",
+        "twitter": "https://twitter.com/smolegends?lang=en",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "48": {
+        "name": "Litter Kittens",
+        "description": "Meow, meow. Only 5,555 kittens for FREE...meow. Coming soon to #arbitrum...",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/litterkittens.jpeg?raw=true",
+        "website": "https://discord.com/invite/litterkittens",
+        "twitter": "https://mobile.twitter.com/litterkittens",
+        "max-slots": 12,
+        "display-on-market": "true",
+        "network": "arb"
     }
 }
