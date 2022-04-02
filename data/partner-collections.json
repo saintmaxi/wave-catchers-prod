@@ -548,5 +548,45 @@
         "max-slots": 15,
         "display-on-market": "true",
         "network": "arb"
+    },
+    "57": {
+        "name": "Smol Age (Formerly Smol Obits)",
+        "description": "Smol Age is a collection of 4269 prehistoric, skeletal ancestors of Smol Brains. Free Mint on Arbitrum",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
+        "website": "https://twitter.com/SmolObits",
+        "twitter": "https://twitter.com/SmolObits",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "58": {
+        "name": "Luv Bugs",
+        "description": "Raising awareness for shelter animals. Passive income utility project made up of 5,555 Luv Bugz",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/luvbugs.jpeg?raw=true",
+        "website": "https://luvbugznft.com/",
+        "twitter": "https://twitter.com/BugzNft",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "59": {
+        "name": "Antebellum Games",
+        "description": "Antebellum, is a Crypto Real Time Strategy game coming to iOS and Android Q4 2022",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/antebellum.jpeg?raw=true",
+        "website": "https://www.antebellumgames.com/",
+        "twitter": "https://twitter.com/AntebellumGames",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "60": {
+        "name": "Color Monsters",
+        "description": "The most inclusive ANIMATED NFTs on the blockchain! ",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/colormonsters.png?raw=true",
+        "website": "https://colormonsters.io/",
+        "twitter": "https://twitter.com/colormonsterNFT",
+        "max-slots": 24,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
