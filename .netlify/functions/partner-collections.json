@@ -551,10 +551,10 @@
     },
     "57": {
         "name": "Smol Age (Formerly Smol Obits)",
-        "description": "Smol Age is a collection of 4269 prehistoric, skeletal ancestors of Smol Brains. Free Mint on Arbitrum",
+        "description": "Smol Age will tell the story of how Smol Brains evolved. The first generation will be 5,678 Neandersmols. Free mint on Arbitrum.",
         "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolobits.jpeg?raw=true",
-        "website": "https://twitter.com/SmolObits",
-        "twitter": "https://twitter.com/SmolObits",
+        "website": "https://twitter.com/SmolAge_NFT",
+        "twitter": "https://twitter.com/SmolAge_NFT",
         "max-slots": 10,
         "display-on-market": "true",
         "network": "arb"
