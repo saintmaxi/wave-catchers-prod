@@ -478,11 +478,11 @@ const openStakingPrompt = async(ids) => {
                          <p style="margin-left:0 !important;margin-right:0 !important;width:100%">
                             Unclaimed passive V2 $COCO will be claimed automatically on staking. You can unstake after the lockup period.
                          </p>
-                         <button class="button" onclick="stakeByIds([${ids}], ${7})">7 DAYS (+10%)</button>
                          <button class="button" onclick="stakeByIds([${ids}], ${30})">30 DAYS (+25%)</button>
                          <button class="button" onclick="stakeByIds([${ids}], ${90})">90 DAYS (+50%)</button>
                         </div>
                        </div>`;
+                    //    <button class="button" onclick="stakeByIds([${ids}], ${7})">7 DAYS (+10%)</button>
         $("body").append(fakeJSX);
         let height = $(document).height();
         $("body").append(`<div id='block-screen-stake' style="height:${height}px" onclick="$('#stake-popup').remove();$('#block-screen-stake').remove()"></div>`);
