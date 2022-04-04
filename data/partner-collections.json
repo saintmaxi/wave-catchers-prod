@@ -76,7 +76,7 @@
         "website": "https://twitter.com/GenesisDragons",
         "twitter": "https://twitter.com/GenesisDragons",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "8": {
@@ -146,7 +146,7 @@
         "website": "https://twitter.com/vSamurai_NFT",
         "twitter": "https://twitter.com/vSamurai_NFT",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "16": {
@@ -322,7 +322,7 @@
     "33": {
         "name": "Smol Bears",
         "description": "Free mint coming to Arbitrum!",
-        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/smolbears.jpeg?raw=true",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolbears.jpeg?raw=true",
         "website": "https://twitter.com/SmolBearsNFT",
         "twitter": "https://twitter.com/SmolBearsNFT",
         "max-slots": 30,
@@ -418,7 +418,7 @@
         "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
-    },
+    } ,
     "43": {
         "name": "The Squids (Refill)",
         "description": "1,000 Genesis Lab-made NFTs designed to play games on the metaverse. Mini games | $DNA",
@@ -459,7 +459,7 @@
         "display-on-market": "true",
         "network": "eth"
     },
-    "47": {
+     "47": {
         "name": "Smolegends",
         "description": "Smolegends is an NFT collection that turns into unique playable characters for our upcoming web-based roguelike deckbuilding game.",
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/smolegend.jpeg?raw=true",

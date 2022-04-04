@@ -76,7 +76,7 @@
         "website": "https://twitter.com/GenesisDragons",
         "twitter": "https://twitter.com/GenesisDragons",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "8": {
@@ -146,7 +146,7 @@
         "website": "https://twitter.com/vSamurai_NFT",
         "twitter": "https://twitter.com/vSamurai_NFT",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "16": {
