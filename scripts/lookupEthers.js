@@ -129,6 +129,15 @@ const getCocoEarnedByID = async() => {
     }
 };
 
+const splitArrayToChunks = (array_, chunkSize_) => {
+    let _arrays = Array(Math.ceil(array_.length / chunkSize_))
+        .fill()
+        .map((_, index) => index * chunkSize_)
+        .map((begin) => array_.slice(begin, begin + chunkSize_));
+
+    return _arrays;
+};
+
 var projectToWL = new Map();
 var myWL = [];
 var collectionsData;
@@ -137,51 +146,59 @@ const loadCollectionsData = async() => {
     let userAddress = await getAddress();
     collectionsData = await $.getJSON(data_file);
     let projectIDs = Object.keys(collectionsData);
-    for (let i = 0; i < projectIDs.length; i++) {
-        let id = Number(projectIDs[i]);
-        let version;
-        let marketContract;
-        if (id < V2_START) {
-            version = 1;
-            marketContract = market;
-        }
-        else {
-            version = 2;
-            marketContract = newMarket;
-        }
-
-        let projectName = collectionsData[String(id)].name;
-        let mintDate = collectionsData[String(id)]["mint-date"] ? `(${collectionsData[String(id)]?.["mint-date"]})` : "" ;
-        let projectSite = collectionsData[String(id)].website;
-        let winners = [];
-
-        if (version == 2) {
-            let eventFilter = marketContract.filters.PurchaseWL(id);
-            let events = await marketContract.queryFilter(eventFilter);
-            for (let i = 0; i < events.length; i++) {
-                if (events[i].args._address == userAddress) {
-                    myWL.push(`<a href="${projectSite}" target="_blank" class="link">${projectName} ${mintDate}</a>`);
-                }
-                winners.push({discord: events[i].args._name, address: events[i].args._address});
+    const chunks = splitArrayToChunks(projectIDs, 20);
+    let idToJSX = new Map();
+    let fullJSX = "";
+    for (const chunk of chunks) {
+        await Promise.all(chunk.map(async (i) => {
+            let id = Number(i);
+            let version;
+            let marketContract;
+            if (id < V2_START) {
+                version = 1;
+                marketContract = market;
             }
-        }
-        else {
-            let eventFilter = marketContract.filters.Purchase(id);
-            let events = await marketContract.queryFilter(eventFilter);
-            for (let i = 0; i < events.length; i++) {
-                if (events[i].args._address == userAddress) {
-                    myWL.push(`<a href="${projectSite}" target="_blank" class="link">${projectName} ${mintDate}</a>`);
-                }
-                winners.push({address: events[i].args._address});
+            else {
+                version = 2;
+                marketContract = newMarket;
             }
-        }
 
-        projectToWL.set(projectName, winners);
-        $("#wl-select").append(`<option value="${projectName}">${projectName}</option>`);
-        if (i == 0) {
-            selectWL(projectName);
-        }
+            let projectName = collectionsData[String(id)].name;
+            let mintDate = collectionsData[String(id)]["mint-date"] ? `(${collectionsData[String(id)]?.["mint-date"]})` : "";
+            let projectSite = collectionsData[String(id)].website;
+            let winners = [];
+
+            if (version == 2) {
+                let eventFilter = marketContract.filters.PurchaseWL(id);
+                let events = await marketContract.queryFilter(eventFilter);
+                for (let i = 0; i < events.length; i++) {
+                    if (events[i].args._address == userAddress) {
+                        myWL.push(`<a href="${projectSite}" target="_blank" class="link">${projectName} ${mintDate}</a>`);
+                    }
+                    winners.push({ discord: events[i].args._name, address: events[i].args._address });
+                }
+            }
+            else {
+                let eventFilter = marketContract.filters.Purchase(id);
+                let events = await marketContract.queryFilter(eventFilter);
+                for (let i = 0; i < events.length; i++) {
+                    if (events[i].args._address == userAddress) {
+                        myWL.push(`<a href="${projectSite}" target="_blank" class="link">${projectName} ${mintDate}</a>`);
+                    }
+                    winners.push({ address: events[i].args._address });
+                }
+            }
+
+            projectToWL.set(projectName, winners);
+            let fakeJSX = `<option value="${projectName}">${projectName}</option>`
+            idToJSX.set(i, fakeJSX);
+        }))
+    };
+    for (const id of projectIDs) {
+        fullJSX += idToJSX.get(id);
     }
+    $("#wl-select").append(fullJSX);
+    selectWL($("#wl-select option:first").val());
 }
 
 const loadMyWL = async() => {
@@ -203,9 +220,9 @@ function selectWL(projectName) {
             return x.address;
         }
     });
-    let wlString = wlArray.join("\n");
+    let wlString = wlArray.join("<br>");
     $("#wl-section").empty();
-    $("#wl-section").text(wlString);
+    $("#wl-section").html(wlString);
     updateDownload();
 }
 
