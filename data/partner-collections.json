@@ -588,5 +588,65 @@
         "max-slots": 24,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "61": {
+        "name": "Dream Protocols",
+        "description": "PHASE 1 - FLAPPY BOYS MINTING APRIL 18.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dreamprotocols.jpeg?raw=true",
+        "website": "https://twitter.com/DreamProtocols",
+        "twitter": "https://twitter.com/DreamProtocols",
+        "max-slots": 15,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "62": {
+        "name": "Homie Faces",
+        "description": "An NFT Collection that Put Community First. Home Sweet Home.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/homiefaces.jpeg?raw=true",
+        "website": "https://twitter.com/HomieFacesNFT",
+        "twitter": "https://twitter.com/HomieFacesNFT",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "63": {
+        "name": "Last Hopium",
+        "description": "NFT utilities tied to 5 star hotels. Enter the Pantheon and become a MetaGod.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/lasthopium.jpeg?raw=true",
+        "website": "https://discord.com/invite/lasthopium",
+        "twitter": "https://twitter.com/lasthopium",
+        "max-slots": 4,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "64": {
+        "name": "BearVX",
+        "description": "BEARVX is the most detailed voxel collection yet. With more than 10+ animations, BearVX’s is fully playable and customisable in all voxel metaverses.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/bearvx.jpeg?raw=true",
+        "website": "https://bearxlabs.com/",
+        "twitter": "https://twitter.com/BearX_NFT",
+        "max-slots": 25,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "65": {
+        "name": "Tori Zero",
+        "description": "The first virtual idol in blockchain industry. A collection of 7,777 NFTs .",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/torizero.jpeg?raw=true",
+        "website": "https://torizero.com/#/",
+        "twitter": "https://twitter.com/ToriZero_REDLAB",
+        "max-slots": 5,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "66": {
+        "name": "Neuromod",
+        "description": "In a fragmented world dictated by technology, your Neuromod is your ticket to survival - plug in and enter the Neuroverse.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/neuromod.jpeg?raw=true",
+        "website": "https://www.neuromod.io/",
+        "twitter": "https://twitter.com/NeuromodNFTs",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
