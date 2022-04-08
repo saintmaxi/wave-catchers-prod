@@ -648,5 +648,65 @@
         "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "67": {
+        "name": "YOOMOOTA",
+        "description": "Explore the YOOMOOTA Metaverse along with 7777 unique NFT Curiosities.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/yoomoota.jpeg?raw=true",
+        "website": "https://yoomoota.io/",
+        "twitter": "https://twitter.com/yoomoota",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+     "68": {
+        "name": "Momoco",
+        "description": "Momoco is a collection of the 10,000 NFTs of memories in Sensoji Temple, bringing the blessing of Sensoji in Tokyo.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/momoco.jpeg?raw=true",
+        "website": "https://www.momoconft.com/#/",
+        "twitter": "https://twitter.com/nft_momoco",
+        "max-slots": 3,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "69": {
+        "name": "Fuzzy Fighters",
+        "description": "2222 Genesis Collection. High utility NFT for holders & future launchpad program for creators.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/fuzzy.jpeg?raw=true",
+        "website": "https://fuzzyfighters.com/",
+        "twitter": "https://twitter.com/fuzzy_fighters",
+        "max-slots": 8,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "70": {
+        "name": "PxDungeon",
+        "description": "20,000 customizable on-chain characters.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pxdungeon.jpeg?raw=true",
+        "website": "https://twitter.com/PxDungeon",
+        "twitter": "https://twitter.com/PxDungeon",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "71": {
+        "name": "Kuroki",
+        "description": "Collection of exclusively hand-drawn anime styled NFTs.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/kuroki.jpeg?raw=true",
+        "website": "https://www.kurokinft.com/",
+        "twitter": "https://twitter.com/Kuroki_NFT",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "72": {
+        "name": "Brewies",
+        "description": "We are Brewies - The caffeinated non-fungibrews pioneering the way to the first web3 coffeeshop.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/brewies.jpeg?raw=true",
+        "website": "https://twitter.com/BrewiesNFT",
+        "twitter": "https://twitter.com/BrewiesNFT",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
