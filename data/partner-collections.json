@@ -708,5 +708,15 @@
         "max-slots": 30,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "73": {
+        "name": "Soul Splicers (Refill)",
+        "description": "Building the next generation of blockchain gaming, starting with a P2E roguevania.<br><br>No empty promises, gameplay first.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/soulsplicers.jpeg?raw=true",
+        "website": "https://twitter.com/SoulSplicersNFT",
+        "twitter": "https://twitter.com/SoulSplicersNFT",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
