@@ -718,5 +718,45 @@
         "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "74": {
+        "name": "Crocodoods",
+        "description": "be nice. be kind. be dood.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/crocodood.jpeg?raw=true",
+        "website": "https://twitter.com/crocodood",
+        "twitter": "https://twitter.com/crocodood",
+        "max-slots": 3,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "75": {
+        "name": "Debt City",
+        "description": "The On-Chain Economy Simulation",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/debtcity.jpeg?raw=true",
+        "website": "https://debtcity.xyz/",
+        "twitter": "https://twitter.com/debtcitynft",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "76": {
+        "name": "The Randoms",
+        "description": "Cultivating singularity.",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/randoms.jpeg?raw=true",
+        "website": "https://therandoms.io/",
+        "twitter": "https://twitter.com/TheRandomsNFT",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "77": {
+        "name": "Clay",
+        "description": "Fully on-chain 3D generative art, by Kai",
+        "image": "https://github.com/saintmaxi/wave-catchers/blob/main/images/clay.jpeg?raw=true",
+        "website": "https://www.weareclay.io/",
+        "twitter": "https://twitter.com/we_are_clay_",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
