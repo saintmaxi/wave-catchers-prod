@@ -719,16 +719,6 @@
         "display-on-market": "true",
         "network": "eth"
     },
-    "74": {
-        "name": "Crocodoods",
-        "description": "be nice. be kind. be dood.",
-        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/crocodood.jpeg?raw=true",
-        "website": "https://twitter.com/crocodood",
-        "twitter": "https://twitter.com/crocodood",
-        "max-slots": 3,
-        "display-on-market": "true",
-        "network": "eth"
-    },
     "75": {
         "name": "Debt City",
         "description": "The On-Chain Economy Simulation",
