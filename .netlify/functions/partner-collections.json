@@ -906,7 +906,7 @@
         "website": "https://www.thenftislands.io/",
         "twitter": "https://twitter.com/thenftislandsio",
         "max-slots": 30,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "96": {
