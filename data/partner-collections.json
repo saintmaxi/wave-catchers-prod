@@ -888,5 +888,15 @@
         "max-slots": 40,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "94": {
+        "name": "Yugen",
+        "description": "A new vision for storytelling in Web3<br><br>A Community narrated cyberpunk anime",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/yugen.jpg?raw=true",
+        "website": "https://twitter.com/Yugennft",
+        "twitter": "https://twitter.com/Yugennft",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
