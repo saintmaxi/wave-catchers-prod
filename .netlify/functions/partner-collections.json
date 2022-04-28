@@ -908,5 +908,35 @@
         "max-slots": 30,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "96": {
+        "name": "Nametags",
+        "description": "Your all-in-one Web2 + Web3 profile 🏷",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/nametags.jpg?raw=true",
+        "website": "https://nametag.org/",
+        "twitter": "https://twitter.com/nametagtweets",
+        "max-slots": 95,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "97": {
+        "name": "Chipos",
+        "description": "An ever expanding idea ♦️",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/chipos.jpg?raw=true",
+        "website": "https://twitter.com/chiposnft",
+        "twitter": "https://twitter.com/chiposnft",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "98": {
+        "name": "The Armors",
+        "description": "3333 warriors inspired by the 80's and 90's series.<br><br>Alpha. Staking. Marketplace. Decreasing Supply. Not your average 3D project.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/The%20Armors.jpg?raw=true",
+        "website": "https://thearmors.io/",
+        "twitter": "https://twitter.com/thearmors",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
