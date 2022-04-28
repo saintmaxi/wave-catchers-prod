@@ -796,7 +796,7 @@
         "website": "https://twitter.com/daodonnft",
         "twitter": "https://twitter.com/daodonnft",
         "max-slots": 40,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "85": {
