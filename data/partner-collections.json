@@ -898,5 +898,15 @@
         "max-slots": 20,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "95": {
+        "name": "NFT Island",
+        "description": "Own, stake and build in our limitless possibilities Minecraft Metaverse 🏝",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/NFT%20Island.jpg?raw=true",
+        "website": "https://www.thenftislands.io/",
+        "twitter": "https://twitter.com/thenftislandsio",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
