@@ -915,7 +915,7 @@
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/nametags.jpg?raw=true",
         "website": "https://nametag.org/",
         "twitter": "https://twitter.com/nametagtweets",
-        "max-slots": 95,
+        "max-slots": 100,
         "display-on-market": "true",
         "network": "eth"
     },
