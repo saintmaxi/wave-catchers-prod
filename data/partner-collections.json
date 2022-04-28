@@ -868,5 +868,15 @@
         "max-slots": 5,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "92": {
+        "name": "The Lab Game",
+        "description": "The Lab, where Scientists produce $SERUM and experiment on Mutants | Mint May 1",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/Lab%20Rats.jpg?raw=true",
+        "website": "http://thelab.game/",
+        "twitter": "https://twitter.com/TheLabGameNFT",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
