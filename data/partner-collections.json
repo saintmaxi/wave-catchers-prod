@@ -916,7 +916,7 @@
         "website": "https://nametag.org/",
         "twitter": "https://twitter.com/nametagtweets",
         "max-slots": 95,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "97": {
@@ -926,7 +926,7 @@
         "website": "https://twitter.com/chiposnft",
         "twitter": "https://twitter.com/chiposnft",
         "max-slots": 30,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "98": {
@@ -936,7 +936,7 @@
         "website": "https://thearmors.io/",
         "twitter": "https://twitter.com/thearmors",
         "max-slots": 10,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     }
 }
