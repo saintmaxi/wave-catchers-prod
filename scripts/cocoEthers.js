@@ -285,7 +285,7 @@ const confirmStakeByIds = async(userAddress, ids, lockups, claimPassive)=> {
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
-            window.alert(error);
+            window.alert(JSON.stringify(error));
             console.log(error);
         }
     }
@@ -353,7 +353,7 @@ const unstakeByIds = async()=>{
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
-            window.alert(error);
+            window.alert(JSON.stringify(error));
             console.log(error);
         }
     }
@@ -385,7 +385,7 @@ const unstakeAll = async() => {
         }
         else {
             await displayErrorMessage("An error occurred. See console and window alert for details...")
-            window.alert(error);
+            window.alert(JSON.stringify(error));
             console.log(error);
         }
     }
