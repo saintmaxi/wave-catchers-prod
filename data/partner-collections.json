@@ -876,7 +876,7 @@
         "website": "http://thelab.game/",
         "twitter": "https://twitter.com/TheLabGameNFT",
         "max-slots": 10,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     },
     "93": {
