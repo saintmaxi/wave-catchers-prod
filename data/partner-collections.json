@@ -938,5 +938,35 @@
         "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "99": {
+        "name": "Furballs",
+        "description": "Collectible NFT game!<br><br>Bosses, Scholarships, Gen2 coming soon!",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/furballs.png?raw=true",
+        "website": "https://furballs.com/",
+        "twitter": "https://twitter.com/FurballsNFT",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "100": {
+        "name": "Underrated Plankton",
+        "description": "Plankton creates half of the Oxygen we breathe 🌳3,333 Collection | Clean the Planet for a year 🌍",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/underratedplankton.jpg?raw=true",
+        "website": "https://linktr.ee/Planktongang",
+        "twitter": "https://twitter.com/planktongang",
+        "max-slots": 3,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "101": {
+        "name": "Greed",
+        "description": "P2E game integrating $MAGIC and Treasure from @Treasure_DAO",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/greed.jpg?raw=true",
+        "website": "https://twitter.com/GREED_Nu",
+        "twitter": "https://twitter.com/GREED_Nu",
+        "max-slots": 25,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
