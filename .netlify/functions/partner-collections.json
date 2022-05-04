@@ -968,5 +968,25 @@
         "max-slots": 25,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "102": {
+        "name": "Automated Assassins",
+        "description": "3333 Genesis Assassins waiting to be deployed on the Blockchain this May.<br><br>100% On-Chain P2E MMORPG. Complete Missions. Collect $BOUNTY. Level up your Crew.",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/automatedAssassins.jpg?raw=true",
+        "website": "https://automated-assassins.gitbook.io/automated-assassins/about/overview",
+        "twitter": "https://twitter.com/AutoAssassinNFT",
+        "max-slots": 50,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "103": {
+        "name": "Jukiverse",
+        "description": "#Jukiverse by Creator of @jukihoki, @fazameonk<br><br>456 Jukis lost in the Jukiverse",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/jukiverse.jpg?raw=true",
+        "website": "https://twitter.com/JukiverseNFT",
+        "twitter": "https://twitter.com/JukiverseNFT",
+        "max-slots": 12,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
