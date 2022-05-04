@@ -966,7 +966,7 @@
         "website": "https://twitter.com/GREED_Nu",
         "twitter": "https://twitter.com/GREED_Nu",
         "max-slots": 25,
-        "display-on-market": "false",
+        "display-on-market": "true",
         "network": "eth"
     }
 }
