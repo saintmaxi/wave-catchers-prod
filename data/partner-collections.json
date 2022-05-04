@@ -967,7 +967,7 @@
         "twitter": "https://twitter.com/GREED_Nu",
         "max-slots": 25,
         "display-on-market": "true",
-        "network": "eth"
+        "network": "arb"
     },
     "102": {
         "name": "Automated Assassins",
