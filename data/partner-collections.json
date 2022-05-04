@@ -981,11 +981,21 @@
     },
     "103": {
         "name": "Jukiverse",
-        "description": "#Jukiverse by Creator of @jukihoki, @fazameonk<br><br>456 Jukis lost in the Jukiverse",
+        "description": "#Jukiverse by Creator of @jukihoki, @fazameonk<br><br>3456 Jukis lost in the Jukiverse",
         "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/jukiverse.jpg?raw=true",
         "website": "https://twitter.com/JukiverseNFT",
         "twitter": "https://twitter.com/JukiverseNFT",
         "max-slots": 12,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "103": {
+        "name": "Squishiverse",
+        "description": "The possibilities are endless... Build, Share & Earn in the Metaverse. 🛠️",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/squishiverse.jpg?raw=true",
+        "website": "https://www.squishiverse.com/",
+        "twitter": "https://twitter.com/SquishiverseNFT",
+        "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
     }
