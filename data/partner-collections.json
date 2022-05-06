@@ -998,5 +998,45 @@
         "max-slots": 10,
         "display-on-market": "true",
         "network": "eth"
+    },
+    "105": {
+        "name": "Dirty Ape",
+        "description": "7777 differents Dirty Ape's 🍌🐵⏳ Minting May 2022 ⌛ Play with your Ape in our unique P2E Game. $DAC coming soon 💸",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/dirtyape.jpg?raw=true",
+        "website": "https://twitter.com/DirtyApeNft",
+        "twitter": "https://twitter.com/DirtyApeNft",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "106": {
+        "name": "Magic Munchers",
+        "description": "A family of furry little monsters roaming the metaverse and devouring $MAGIC and jpegs",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/magicmunchers.jpg?raw=true",
+        "website": "https://www.magicmunchers.lol/",
+        "twitter": "https://twitter.com/magicmunchers",
+        "max-slots": 20,
+        "display-on-market": "true",
+        "network": "arb"
+    },
+    "107": {
+        "name": "Laidback Llamas",
+        "description": "3000 #LadyLlamas 🦙 - Minting May 16th",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/laidbackllama.jpg?raw=true",
+        "website": "https://www.laidbackllamas.com/",
+        "twitter": "https://twitter.com/LaidBackLlamas",
+        "max-slots": 10,
+        "display-on-market": "true",
+        "network": "eth"
+    },
+    "108": {
+        "name": "Pastel Peeps",
+        "description": "5555 colourful Hand drawn, Generative cc0 pfp Art+Utility project",
+        "image": "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/pastelpeeps.jpg?raw=true",
+        "website": "https://www.pastelpeeps.xyz/",
+        "twitter": "https://twitter.com/PastellPeeps",
+        "max-slots": 30,
+        "display-on-market": "true",
+        "network": "eth"
     }
 }
