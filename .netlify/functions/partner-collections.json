@@ -1016,7 +1016,7 @@
         "website": "https://www.magicmunchers.lol/",
         "twitter": "https://twitter.com/magicmunchers",
         "max-slots": 20,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "arb"
     },
     "107": {
