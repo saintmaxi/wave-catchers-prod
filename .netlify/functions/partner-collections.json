@@ -1096,7 +1096,7 @@
         "website": "http://crazycatznft.org/",
         "twitter": "https://twitter.com/crazycatznft",
         "max-slots": 30,
-        "display-on-market": "true",
+        "display-on-market": "false",
         "network": "eth"
     }
 }
