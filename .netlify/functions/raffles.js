@@ -68,7 +68,7 @@ const getPastRaffles = async() => {
         let raffleInfo = await market.getRaffle(id);
         let rafflePrice = Number(ethers.utils.formatEther(raffleInfo.price));
         let expired = (raffleInfo.endTime < (Date.now() / 1000));
-        let totalEntries = await getTotalEntries(currentID);
+        let totalEntries = await getTotalEntries(id);
 
         // Data from JSON file
         let raffle = rafflesData[String(id)];
