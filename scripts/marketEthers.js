@@ -339,6 +339,8 @@ const loadCollections = async() => {
             else if (network == "arb") {
                 networkLogo = "./images/arbitrum.png";
             }
+            else if (network == "sol") {
+                networkLogo = "./images/solana.png";
     
             let winners = [];
             if (version == 2) {
