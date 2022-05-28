@@ -319,7 +319,7 @@
     #discord-mobile {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         color: black !important;
         background-color: white;
