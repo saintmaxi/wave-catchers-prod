@@ -72,6 +72,9 @@ const getCollections = async() => {
             else if (network == "arb") {
                 networkLogo = "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/arbitrum.png?raw=true";
             }
+            else if (network == "sol") {
+                networkLogo = "https://github.com/saintmaxi/wave-catchers-prod/blob/main/images/solana.png?raw=true";
+            }
     
             if (display) {
                 if (minted != maxSlots) {
