@@ -68,7 +68,7 @@ exports.handler = async function(event, context) {
             return { statusCode: 400, body: "Missing query parameters" };
          }
 
-         let buyers = await getCollections();
+         let buyers = await getBuyers();
 
          return {
             statusCode: 200,
