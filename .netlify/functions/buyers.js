@@ -1,7 +1,7 @@
 const ethers = require('ethers');
 
-const infuraKey = process.env.INFURA_KEY;
-const provider = new ethers.providers.InfuraProvider("mainnet", infuraKey);
+const alchemyKey = process.env.ALCHEMY_KEY;
+const provider = new ethers.providers.AlchemyProvider("homestead", alchemyKey);
 const V2_START = 33;
 
 const marketAddress = "0x061B8879C93B0289437ED45cADFA614c14971C84";
@@ -16,17 +16,6 @@ const newMarketAbi = () => {
 
 const market = new ethers.Contract(marketAddress, marketAbi(), provider);
 const newMarket = new ethers.Contract(newMarketAddress, newMarketAbi(), provider);
-
-var collectionsData = require("./partner-collections.json");
-
-const splitArrayToChunks = (array_, chunkSize_) => {
-    let _arrays = Array(Math.ceil(array_.length / chunkSize_))
-    .fill()
-    .map((_, index) => index * chunkSize_)
-    .map((begin) => array_.slice(begin, begin + chunkSize_));
-
-    return _arrays;
-};
 
 const getBuyers = async(id) => {
     let marketContract;
@@ -44,20 +33,24 @@ const getBuyers = async(id) => {
 
     let buyers = [];
     if (version == 2) {
+        console.log(2);
         let eventFilter = marketContract.filters.PurchaseWL(id);
         let events = await marketContract.queryFilter(eventFilter);
         for (let i = 0; i < events.length; i++) {
             buyers.push(`${events[i].args._address}`);
+        console.log("added buyer");
         }
     }
     else {
+        console.log(1);
         let eventFilter = marketContract.filters.Purchase(id);
         let events = await marketContract.queryFilter(eventFilter);
         for (let i = 0; i < events.length; i++) {
             buyers.push(events[i].args._address);
+        console.log("added buyer");
         }
     }
-
+    console.log(buyers);
     return { buyers: buyers }
 }
 
