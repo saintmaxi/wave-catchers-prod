@@ -324,7 +324,7 @@ setInterval(async()=>{
     await updateInfo();
     await updateMintInfo();
     await checkMintingLive();
-    await checkWhitelistStatus();
+    // await checkWhitelistStatus();
 }, 5000)
 
 var chainLogoSet = false;
@@ -362,7 +362,7 @@ window.onload = async()=>{
     await checkMintingLive();
     await updateMintInfo();
     await updatePrice();
-    await checkWhitelistStatus();
+    // await checkWhitelistStatus();
 };
 
 window.onunload = async()=>{
