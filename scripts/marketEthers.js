@@ -343,19 +343,19 @@ const loadCollections = async() => {
                 networkLogo = "./images/solana.png";
             }
     
-            let winners = [];
+            let buyers = [];
             if (version == 2) {
                 let eventFilter = marketContract.filters.PurchaseWL(id);
                 let events = await marketContract.queryFilter(eventFilter);
                 for (let i = 0; i < events.length; i++) {
-                    winners.push(`${events[i].args._address}`);
+                    buyers.push(`${events[i].args._address}`);
                 }
             }
             else {
                 let eventFilter = marketContract.filters.Purchase(id);
                 let events = await marketContract.queryFilter(eventFilter);
                 for (let i = 0; i < events.length; i++) {
-                    winners.push(events[i].args._address);
+                    buyers.push(events[i].args._address);
                 }
             }
     
@@ -365,7 +365,7 @@ const loadCollections = async() => {
                     liveListings.push(id);
                     timerPending.push(true);
                     let button;
-                    if (winners.includes(userAddress)) {
+                    if (buyers.includes(userAddress)) {
                         button = `<button disabled class="mint-prompt-button button purchased" id="${id}-mint-button">PURCHASED!</button>`;
                     }
                     else {
@@ -397,7 +397,7 @@ const loadCollections = async() => {
                 else {
                     numPast +=1;
                     let button;
-                    if (winners.includes(userAddress)) {
+                    if (buyers.includes(userAddress)) {
                         button = `<button disabled class="mint-prompt-button button purchased">PURCHASED!</button>`;
                     }
                     else {
