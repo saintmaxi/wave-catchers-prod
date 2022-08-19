@@ -1416,7 +1416,7 @@
     "website": "https://twitter.com/onlyonesleft",
     "twitter": "https://twitter.com/onlyonesleft",
     "max-slots": 27,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "147": {
@@ -1426,7 +1426,7 @@
     "website": "https://twitter.com/bearfrenzNFT",
     "twitter": "https://twitter.com/bearfrenzNFT",
     "max-slots": 19,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "148": {
