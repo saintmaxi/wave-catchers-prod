@@ -1436,7 +1436,7 @@
     "website": "https://twitter.com/dogslifelol",
     "twitter": "https://twitter.com/dogslifelol",
     "max-slots": 15,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "149": {
@@ -1446,7 +1446,7 @@
     "website": "https://twitter.com/MetaDungeon_",
     "twitter": "https://twitter.com/MetaDungeon_",
     "max-slots": 40,
-    "display-on-market": "true",
+    "display-on-market": "false",
     "network": "eth"
   },
   "150": {
